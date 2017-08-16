@@ -30,12 +30,12 @@
 
 
           var baloons = [
-            'http://wedding.dev/images/balloon.png',
-            'http://wedding.dev/images/1.png',
-            'http://wedding.dev/images/2.png',
-            'http://wedding.dev/images/3.png',
-            'http://wedding.dev/images/4.png',
-            'http://wedding.dev/images/5.png',
+            '/images/balloon.png',
+            '/images/1.png',
+            '/images/2.png',
+            '/images/3.png',
+            '/images/4.png',
+            '/images/5.png',
           ];
           // var image = 'http://wedding.dev/images/balloon.png';
         for(i = 0; i < data.length; i++) {
@@ -50,7 +50,6 @@
           });
         }
         marker.addListener('click', toggleBounce);
-
 
         function toggleBounce() {
           if (marker.getAnimation() !== null) {

@@ -123,10 +123,19 @@
         var marker = new google.maps.Marker({
           position: {
             lat: 52.514582433111215,
-            lng: 13.673931038623095
+            lng: 13.673931038623095,
           },
           map: map,
           draggable: true
+        });
+
+        var infoWindow = new google.maps.InfoWindow({
+          content: '<h1>Bitte markiere mit dem Pin einen Standort!</h1>'
+        });
+        infoWindow.open(map, marker);
+
+        marker.addListener('drag', function(){
+          infoWindow.close(map, marker);
         });
 
         var input = document.getElementById('searchmap');
