@@ -122,8 +122,8 @@
 
         var marker = new google.maps.Marker({
           position: {
-            lat: 52.4970097,
-            lng: 13.3306971
+            lat: 52.514582433111215,
+            lng: 13.673931038623095
           },
           map: map,
           draggable: true
