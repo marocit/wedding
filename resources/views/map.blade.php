@@ -14,7 +14,7 @@
             lat: 52.514582433111215,
             lng: 13.673931038623095
           },
-          zoom: 13,
+          zoom: 8,
           // mapTypeId: 'terrain',
           scrollwheel: true,
           streetViewControl: false,
